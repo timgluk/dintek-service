@@ -1,0 +1,35 @@
+/* Слайдер */
+
+.swiper {
+  display: block;
+  max-width: 100%;
+  height: 60vh;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+  opacity: 0.5;
+}
+
+.wrapper, .swiper-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 50vw;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .swiper {
+    height: 50vw;
+    
+  }
+}

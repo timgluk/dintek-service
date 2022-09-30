@@ -1,0 +1,22 @@
+/* Переменные */
+
+$dark-blue: #1d3557;
+$blue: #457B9D;
+$cyan: #A8DADC;
+$red: #E63946;
+$grey: #F1FAEE;
+
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+@import 'normalize.css/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import '_header.scss';
+@import '_slider.scss';
+@import '_categories.scss';
+@import '_about.scss';
+@import '_news.scss';
+@import '_footer.scss';
+@import '_burger.scss';
+@import '_sub-menu.scss';
