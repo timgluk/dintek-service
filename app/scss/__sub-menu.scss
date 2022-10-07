@@ -28,9 +28,19 @@
     text-decoration: none;
   }
 
-  // &:hover {
-  //   visibility: visible;
-  //   z-index: 20;
-
-  // }
+  &_active {
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
+
+// @media screen and (max-width: 768px) {
+//   .sub-menu {
+//     background-color: $red;
+//     border-radius: 5px;
+
+
+//   }
+// }

@@ -128,15 +128,20 @@
   gap: 20px;
   list-style-type: none;
 
-  &:hover > .sub-menu, .sub-menu:hover  {
-      visibility: visible;
-      z-index: 20;
-      // transform: rotateX(0deg);
-      opacity: 1;
+  // &__item {
+  //   &:hover .sub-menu, .sub-menu:hover {
+  //     visibility: visible;
+  //     z-index: 20;
+  //     transform: rotateX(0deg);
+  //     opacity: 1;
+  //     transform: translateY(16px);
+  //   }
+  // }
 
-      // transform: translateY(30px);
+  &__item {
+    // padding: 10px;
 
-    }
+  }
 
   &__link {
     position: relative;
@@ -146,12 +151,12 @@
     // padding-bottom: 10px;
     transition: all 0.7s;
 
-    &:hover {
+    &_hover {
       text-shadow: 2px 2px 3px rgb(70, 70, 70);
       z-index: 1;
     }
 
-    &::after {
+    &_hover::after {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -161,9 +166,7 @@
       content: '';
       color: transparent;
       height: 1px;
-    }
 
-    &:hover::after {
       z-index: -10;
       animation: fill 0.5s forwards;
       -webkit-animation: fill 0.5s forwards;
@@ -171,27 +174,15 @@
       opacity: 1;
     }
 
-    // &:hover > ul, ul li ul:hover  {
-    //   visibility: visible;
-    //   z-index: 20;
-    //   // transform: rotateX(0deg);
+    // &_hover::after {
+    //   z-index: -10;
+    //   animation: fill 0.5s forwards;
+    //   -webkit-animation: fill 0.5s forwards;
+    //   -moz-animation: fill 0.5s forwards;
     //   opacity: 1;
-
-    //   // transform: translateY(30px);
-
     // }
   }
 }
-
-// ul li:hover > ul, ul li ul:hover  {
-//   visibility: visible;
-//   z-index: 20;
-//   // transform: rotateX(0deg);
-//   opacity: 1;
-
-//   // transform: translateY(30px);
-
-// }
 
 /* Keyframes */
 @keyframes fill {

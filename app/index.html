@@ -24,7 +24,7 @@
           <picture>
             <source srcset="./images/dintek-logo-white-250.png"
                     media="(max-width: 768px)">
-            <img class="logo-box__img" src="/images/dintek-logo-dark-blue-250.png" alt="dintek логотип">
+            <img class="logo-box__img" src="./images/dintek-logo-dark-blue-250.png" alt="dintek логотип">
           </picture>
         </a>
         <span class="logo-box__description">Запчасти для <br/> кранов манипуляторов</span>
@@ -49,7 +49,20 @@
     </div>
     <nav class="header__nav">
       <ul class="nav__list list">
-        <li class="list__item"><a class="list__link" href="#">Каталог</a></li>
+        <li class="list__item">
+          <a class="list__link" href="#">Каталог</a>
+          <ul class="sub-menu">
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-katalog1</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-katalog2</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-katalog3</a>
+            </li>
+          </ul>
+        </li>
         <li class="list__item"><a class="list__link" href="#">Доставка и оплата</a></li>
         <li class="list__item"><a class="list__link" href="#">Контакты</a></li>
         <li class="list__item"><a class="list__link" href="#">О компании</a></li>
@@ -191,5 +204,8 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <!-- <script src="js/slider-swiper.js"></script> -->
+  <!-- <script src="js/burger.js"></script> -->
 </body>
 </html>

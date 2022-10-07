@@ -20,6 +20,7 @@ button.addEventListener('click', () => {
   if (burger.classList.contains('active')) {
     burger.classList.remove('active');
     nav.classList.remove('header__nav_active');
+    contacts.remove();
     body.style.overflow = 'visible';
     body.style.touchAction = 'auto';
   } else {

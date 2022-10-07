@@ -46,12 +46,25 @@ window.addEventListener('scroll', () => {
 
 /* выпадающее меню */
 
-// const items = document.querySelectorAll('.list__link + ul');
-// // console.log(items);
-// for (const item of items) {
-//   item.style.visibility = 'visible';
-// }
-// item.style.display = 'flex';
-// items.forEach((item) => item.style.visibility = 'visible');
+const list = document.querySelector('.list');
 
-// item.forEach
+list.addEventListener('mouseover', (e) => {
+  const item = e.target.closest('.list__item');
+  const subMenu = item?.querySelector('.sub-menu');
+
+  if (e.target.classList.contains('list__link')) {
+    e.target.classList.add('list__link_hover');
+    subMenu?.classList.add('sub-menu_active');
+  }
+});
+
+list.addEventListener('mouseout', (e) => {
+  const item = e.relatedTarget.closest('.list__item');
+  console.log(item);
+
+  if(!item) {
+    e.target.classList.remove('list__link_hover');
+    const subMenu = list.querySelector('.sub-menu_active');
+    subMenu?.classList.remove('sub-menu_active');
+  }
+});
