@@ -63,7 +63,7 @@ list.addEventListener('mouseout', (e) => {
   console.log(item);
 
   if(!item) {
-    e.target.classList.remove('list__link_hover');
+    list.querySelector('.list__link_hover').classList.remove('list__link_hover');
     const subMenu = list.querySelector('.sub-menu_active');
     subMenu?.classList.remove('sub-menu_active');
   }
