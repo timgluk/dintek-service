@@ -130,16 +130,6 @@
   list-style-type: none;
   margin: 0;
 
-  // &__item {
-  //   &:hover .sub-menu, .sub-menu:hover {
-  //     visibility: visible;
-  //     z-index: 20;
-  //     transform: rotateX(0deg);
-  //     opacity: 1;
-  //     transform: translateY(16px);
-  //   }
-  // }
-
   &__item {
     position: relative;
     padding: 20px;
@@ -165,6 +155,11 @@
       -webkit-animation: fill 0.5s forwards;
       -moz-animation: fill 0.5s forwards;
       opacity: 1;
+    }
+
+    &_active {
+      text-shadow: 2px 2px 3px rgb(70, 70, 70);
+      background: $cyan;
     }
   }
 
