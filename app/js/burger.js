@@ -29,5 +29,8 @@ button.addEventListener('click', () => {
     nav.append(contacts);
     body.style.overflow = 'hidden';
     body.style.touchAction = 'none';
+
+    nav.style.overflow = 'visible';
+    nav.style.touchAction = 'auto';
   }
 });

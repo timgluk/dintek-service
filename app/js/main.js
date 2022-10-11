@@ -46,26 +46,20 @@ window.addEventListener('scroll', () => {
 
 /* выпадающее меню */
 
-const list = document.querySelector('.list');
-if (!mediaQuery.matches) {
+const list = [...document.querySelectorAll('.list__item')];
 
-  list.addEventListener('mouseover', (e) => {
-    const item = e.target?.closest('.list__item');
-    const subMenu = item?.querySelector('.sub-menu');
+list.forEach((item) => {
+  item.onmouseover = () => {
+    if (mediaQuery.matches) return;
+    item.classList.add('list__item_hover');
+    const subMenu = item.querySelector('.sub-menu');
+    subMenu?.classList.add('sub-menu_active');
+  };
 
-    if (e.target.classList.contains('list__link')) {
-      e.target.classList.add('list__link_hover');
-      subMenu?.classList.add('sub-menu_active');
-    }
-  });
-
-  list.addEventListener('mouseout', (e) => {
-    const item = e.relatedTarget?.closest('.list__item');
-
-    if(!item) {
-      list.querySelector('.list__link_hover')?.classList.remove('list__link_hover');
-      const subMenu = list.querySelector('.sub-menu_active');
-      subMenu?.classList.remove('sub-menu_active');
-    }
-  });
-}
+  item.onmouseout = () => {
+    if (mediaQuery.matches) return;
+    item.classList.remove('list__item_hover');
+    const subMenu = item.querySelector('.sub-menu');
+    subMenu?.classList.remove('sub-menu_active');
+  };
+});
