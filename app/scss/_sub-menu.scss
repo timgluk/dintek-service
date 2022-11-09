@@ -10,8 +10,8 @@
   opacity: 0;
   transition: all 0.2s ease-in;
   transform: translateY(21px);
-  background-color: $cyan;
-  color: $grey;
+  background-color: $dark-blue;
+  color: #fff;
   box-shadow: 0px 3px 5px -1px rgba(7, 7, 7, 0.418);
   text-align: left;
   cursor: pointer;
@@ -21,12 +21,12 @@
     padding: 15px 20px;
 
     &:hover {
-      background-color: hsl(182, 16%, 54%);
+      background-color: $cyan;
     }
 
     &:hover .sub-menu__link {
       text-shadow: 2px 2px 3px rgb(70, 70, 70);
-      background-color: hsl(182, 16%, 54%);
+      background-color: $cyan;
     }
   }
 
