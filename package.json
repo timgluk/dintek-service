@@ -24,5 +24,13 @@
     "gulp-concat": "^2.6.1",
     "normalize.css": "^8.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timi-boy/dintek-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timi-boy/dintek-service/issues"
+  },
+  "homepage": "https://github.com/timi-boy/dintek-service#readme",
   "description": ""
 }
