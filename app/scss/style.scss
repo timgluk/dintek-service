@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
 /* Переменные */
 
 $dark-blue: #1d3557;
@@ -11,7 +13,6 @@ html {
 }
 
 @import 'normalize.css/normalize';
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 @import '_header.scss';
 @import '_slider.scss';
 @import '_categories.scss';

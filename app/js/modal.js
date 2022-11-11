@@ -8,7 +8,7 @@ buttonModal.forEach((button) => {
   };
 });
 
-modal.addEventListener('click', (e) => {
+modal?.addEventListener('click', (e) => {
   if (e.target.classList.contains('modal-wrapper') || e.target.classList.contains('modal__close')) {
     modal.classList.remove('modal-wrapper_active');
   }

@@ -16,7 +16,7 @@ contacts.innerHTML = `
 
 /* burger animated */
 
-button.addEventListener('click', () => {
+button?.addEventListener('click', () => {
   if (burger.classList.contains('active')) {
     burger.classList.remove('active');
     nav.classList.remove('header__nav_active');
