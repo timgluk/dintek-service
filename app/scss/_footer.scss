@@ -17,7 +17,6 @@
     width: 100%;
     box-sizing: border-box;
     padding: 30px 20px;
-  
   }
 
   &__contacts {
@@ -27,26 +26,24 @@
   }
 
   &__logo {
-    // max-width: 100%;
     width: 250px;
-    // height: 70px;
     object-fit: contain;
     margin-bottom: 20px;
-
   }
 
   &__tel,
   &__email {
     text-decoration: none;
     color: $grey;
-    // color: $dark-blue;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
+  }
+
+  &__email {
     margin-bottom: 10px;
   }
 
   &__address-box {
-    // color: grey;
     color: #fff;
     font-size: 12px;
   }

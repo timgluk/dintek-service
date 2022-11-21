@@ -11,8 +11,8 @@
     font-size: 40px;
     font-weight: 400;
     color: $dark-blue;
-    padding: 0;
-    margin-bottom: 50px;
+    padding: 50px;
+    // margin-bottom: 50px;
   }
 
   &__wrapper {
@@ -25,6 +25,22 @@
     gap: 3vw;
     flex-wrap: wrap;
     justify-content: space-between
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    background-color: #e63946;
+    border-radius: 8px;
+    margin-top: 4vw;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    font-family: "Rubik",sans-serif;
+    font-size: 20px;
+
+    &:hover {
+      box-shadow: 0 0 5px black;
+    }
   }
 }
 
@@ -56,6 +72,8 @@
     font-weight: 400;
     text-align: center;
     color: $dark-blue;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
