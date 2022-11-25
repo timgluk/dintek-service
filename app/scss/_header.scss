@@ -141,6 +141,7 @@
     position: relative;
     padding: 20px;
     transition: all 0.7s;
+    font-family: 'Rubik', sans-serif;
 
     &_hover {
       text-shadow: 2px 2px 3px rgb(70, 70, 70);
@@ -148,13 +149,13 @@
     }
 
     &_hover::after {
+      content: '';
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       margin: 0;
       width: 0%;
-      content: '';
       color: transparent;
       height: 1px;
       z-index: -10;
@@ -232,32 +233,37 @@
     position: fixed;
     flex-direction: column;
     width: 70%;
-    height: 100vh;
+    height: 100%;
     justify-content: flex-start;
     right: 0;
     transform: translate(100%, 90px);
     opacity: 0;
     visibility: hidden;
     z-index: 0;
-    padding-bottom: 40vh;
+    gap: 0;
+    // padding-bottom: 40vh;
 
     &_active {
       transform: translate(0, 90px);
       opacity: 1;
       visibility: visible;
-      z-index: 25;
+      z-index: 99;
      
     }
   }
 
   .list {
     flex-direction: column;
-    // gap: 40px;
+    gap: 0;
     align-items: flex-end;
     height: auto;
-
-    &__item_active {
-      background: transparent;
+    
+    &__item {
+      padding-right: 0;
+      
+      &_active {
+        background: transparent;
+      }
     }
 
     &__link {

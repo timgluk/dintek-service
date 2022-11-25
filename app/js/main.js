@@ -25,21 +25,25 @@ window.addEventListener('scroll', () => {
     }
   }
 
-  if (mediaQuery.matches) {
-    if (prevScrollpos > currentScrollPos) {
-      headerBlock?.classList.add('header__block1-wrapper_fixed');
-    } else {
-      headerBlock?.classList.remove('header__block1-wrapper_fixed');
-    }
-    prevScrollpos = currentScrollPos;
+  if (!header.classList.contains('header__nav_active')) {
 
-    if (window.pageYOffset >= 200) {
-      headerBlock?.classList.add('header__block1-wrapper_hidden');
-    }
+    if (mediaQuery.matches) {
+      if (prevScrollpos > currentScrollPos) {
+        headerBlock?.classList.add('header__block1-wrapper_fixed');
+      } else {
+        headerBlock?.classList.remove('header__block1-wrapper_fixed');
+      }
+      prevScrollpos = currentScrollPos;
 
-    if (window.pageYOffset <= 5) {
-      headerBlock?.classList.remove('header__block1-wrapper_hidden');
-      headerBlock?.classList.remove('header__block1-wrapper_fixed');
+      if (window.pageYOffset >= 200) {
+        headerBlock?.classList.add('header__block1-wrapper_hidden');
+      }
+    
+
+      if (window.pageYOffset <= 5) {
+        headerBlock?.classList.remove('header__block1-wrapper_hidden');
+        headerBlock?.classList.remove('header__block1-wrapper_fixed');
+      }
     }
   }
 });
