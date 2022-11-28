@@ -37,6 +37,11 @@
     color: blue;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+    margin: 0.67em 0;
+  }
+
+  &__desc {
+    text-align: justify;
   }
 }
 
@@ -66,7 +71,32 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .wrapper__title {
+    font-size: 25px;
+  }
+
+  .wrapper__desc {
+    font-size: 16px;
+  }
+  // .swiper {
+  //   height: 50vw;
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper__desc {
+    display: none;
+  }
+  // .swiper {
+  //   height: 50vw;
+  // }
+}
+
 @media screen and (max-width: 480px) {
+  .wrapper__title {
+    font-size: 20px;
+  }
   // .swiper {
   //   height: 50vw;
   // }

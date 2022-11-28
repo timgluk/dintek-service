@@ -136,12 +136,14 @@
   gap: 20px;
   list-style-type: none;
   margin: 0;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 
   &__item {
     position: relative;
     padding: 20px;
     transition: all 0.7s;
-    font-family: 'Rubik', sans-serif;
+    // font-family: 'Rubik', sans-serif;
 
     &_hover {
       text-shadow: 2px 2px 3px rgb(70, 70, 70);
@@ -253,12 +255,17 @@
   }
 
   .list {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+
+    // flex-direction: column;
     gap: 0;
     align-items: flex-end;
     height: auto;
     
     &__item {
+      padding: 15px;
       padding-right: 0;
       
       &_active {
@@ -268,9 +275,9 @@
 
     &__link {
       background-color: $red;
-      font-size: 22px;
+      font-size: 20px;
       border-radius: 5px;
-      padding: 10px 20px;
+      padding: 5px 20px;
 
       &:hover {
         text-shadow: 2px 2px 3px rgb(70, 70, 70);
