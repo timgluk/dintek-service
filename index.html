@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <title>Dintek-service</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__block1-wrapper">
+      <div class="logo-box">
+        <a href="index.html">
+          <picture>
+            <source srcset="./images/dintek-logo-white-250.png"
+                    media="(max-width: 768px)">
+            <img class="logo-box__img" src="./images/dintek-logo-dark-blue-500.png" alt="dintek логотип">
+          </picture>
+        </a>
+        <span class="logo-box__description">Запчасти для <br> кранов манипуляторов</span>
+      </div>
+      <div class="contacts">
+        <a class="contacts__link" href="#">
+          <img class="contacts__ico" src="images/icons/telegram.png" alt="ссылка на telegram">
+        </a>
+        <a class="contacts__link" href="#">
+          <img class="contacts__ico" src="images/icons/whatsapp.png" alt="сылка на whatsapp">
+        </a>
+        <img class="contacts__ico" src="images/icons/tel2-ico.png" alt="иконка телефона">
+        <div class="contacts__tel-box">
+          <a href="#" class="contacts__tel">8(800)800-80-80</a>
+          <a href="#" class="contacts__tel">8(800)800-80-80</a>
+        </div>
+        <span class="contacts__button-wrapper">
+          <a href="#" class="contacts__button-wrapper__button"></a>
+        </span>
+      </div>
+      <div class="burger">
+        <svg class="burger-btn" width="25" height="20" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+          <rect class="burger-btn--1" width="25" height="2" rx="1" ry="1" />
+          <rect class="burger-btn--2" width="25" height="2" y="7" rx="1" ry="1" />
+          <rect class="burger-btn--3" width="25" height="2" y="14" rx="1" ry="1" />
+        </svg>
+      </div>
+    </div>
+    <nav class="header__nav">
+      <ul class="nav__list list">
+        <li class="list__item">
+          <a class="list__link" href="./katalog.html">Каталог</a>
+          <ul class="sub-menu">
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-katalog1</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-katalog2</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-katalog3</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list__item"><a class="list__link" href="#">Доставка и оплата</a></li>
+        <li class="list__item"><a class="list__link" href="#">Контакты</a></li>
+        <li class="list__item"><a class="list__link" href="#">О компании</a></li>
+        <li class="list__item">
+          <a class="list__link" href="#">Новости</a>
+          <ul class="sub-menu">
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-menu1</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-menu2</a>
+            </li>
+            <li class="sub-menu__item">
+              <a href="#" class="sub-menu__link">sub-menu3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="contacts-nav">
+        <a href="tel:" class="contacts-nav__tel">8(800)800-80-80</a>
+        <a href="tel:" class="contacts-nav__tel">8(800)800-80-80</a>
+        <a href="mailto:email@email.com" class="contacts-nav__mail">email@email.com</a>
+        <div class="contacts__links">
+          <a class="contacts__link" href="#">
+            <img class="contacts__ico" src="images/icons/telegram.png" alt="ссылка на telegram">
+          </a>
+          <a class="contacts__link" href="#">
+            <img class="contacts__ico" src="images/icons/whatsapp.png" alt="сылка на whatsapp">
+          </a>
+        </div>
+        <a href="#" class="contacts-nav__button">Написать нам</a>
+      </div>
+    </nav>
+  </header>
+  <div class="modal-wrapper">
+    <form class="modal" name="modal">
+      <h2 class="modal__title">Ваши контакты</h2>
+      <input type="text"
+             class="modal__input"
+             placeholder="Имя"
+             name="login"
+             required
+      />
+      <input type="tel"
+             class="modal__input"
+             placeholder="Телефон"
+             name="tel"
+      />
+      <input type="email"
+             class="modal__input"
+             placeholder="email"
+             name="mail"
+      />
+      <p class="modal__slogan">Мы обязательно с вами свяжемся!</p>
+      <input class="modal__send" type="submit" name="submit" value="Отправить" />    
+      <svg class="modal__close" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50">
+        <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 
+        L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/>
+      </svg>
+    </form>
+  </div>
+
+  <section class="slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="wrapper swiper-slide">
+          <div class="wrapper__slogan-wrap">
+            <div class="wrapper__slogan-wrap__box">
+              <h1 class="wrapper__title">Заголовок</h1>
+              <p class="wrapper__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt rerum ducimus earum praesentium molestias corporis? Ullam nesciunt laboriosam iure, molestias sit sequi nam unde sapiente quibusdam aliquid, harum ipsa?</p>
+            </div>
+          </div>
+          <img class="swiper__img wrapper__img" src="./images/slider/slid1-1920-600.jpg" alt="слайд 1">
+        </div>
+
+        <div class="wrapper swiper-slide">
+          <div class="wrapper__slogan-wrap">
+            <div class="wrapper__slogan-wrap__box">
+              <h1 class="wrapper__title">Заголовок</h1>
+              <p class="wrapper__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt incidunt rerum ducimus earum praesentium molestias corporis? Ullam nesciunt laboriosam iure, molestias sit sequi nam unde sapiente quibusdam aliquid, harum ipsa?</p>
+            </div>
+          </div>
+          <img class="swiper__img wrapper__img" src="./images/slider/slid1-1920-600-db.jpg" alt="слайд 1">
+        </div>
+        
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section class="categories">
+    <h2 class="categories__title">Каталог</h2>
+    <div class="categories__wrapper">
+      <a href="#" class="category">
+        <img class="category__img" src="./images/categories/kmu.png" alt="Запчасти для КМУ">
+        <h3 class="category__title">ЗИП для кранов-манипуляторов</h3>
+      </a>
+
+      <a href="#" class="category">
+        <img class="category__img" src="./images/categories/korzina-kmu.png" alt="Запчасти для КМУ">
+        <h3 class="category__title">Оборудование для выстоных работ</h3>
+      </a>
+    
+      <a href="#" class="category">
+        <img class="category__img" src="./images/categories/opornik.png" alt="Запчасти для КМУ">
+        <h3 class="category__title">Опорно-поворотный подшипник</h3>
+      </a>
+  
+      <a href="#" class="category">
+        <img class="category__img" src="./images/categories/podkat.png" alt="Запчасти для КМУ">
+        <h3 class="category__title">Подкаты, кантователи для снегохода</h3>
+      </a>
+    </div>
+    <a class="categories__link" href="#">Подробнее</a>
+  </section>
+  <section class="about">
+    <div class="about__img-box">
+      <img class="about__img" src="./images/managers-800.jpg" alt="общее фото">
+    </div>
+    <div class="about__text-box">
+      <h3 class="about__title">Получить консультацию</h3>
+      <p class="about__subtitle">наших специалистов</p>
+      <p class="about__about-us-text">Наши специалисты прокосультируют вас по всех вопросам подбора запчастей для вашего оборудования</p>
+      <span class="contacts__button-wrapper contacts__button-wrapper_about">
+        <a href="#" class="contacts__button-wrapper__button contacts__button-wrapper__button_about"></a>
+      </span>
+    </div>
+  </section>
+  <section class="section-news">
+    <div class="section-news__wrapper">
+      <div class="news">
+        <div class="news__img-box">
+          <img class="news__img" src="./images/news/korzina-kmu.jpg" alt="новость 1">
+        </div>
+        <div class="news__text-box">
+          <h3 class="news__title">Новость 1</h3>
+          <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam aliquam tempora nostrum voluptas ipsam veritatis error, architecto, cupiditate exercitationem, incidunt recusandae libero iusto. Placeat provident aliquam accusamus aliquid similique!</p>
+          <p class="news__date">16.09.2022</p>
+        </div>
+      </div>
+
+      <div class="news">
+        <div class="news__img-box">
+          <img class="news__img" src="./images/news/korzina-kmu.jpg" alt="новость 1">
+        </div>
+        <div class="news__text-box">
+          <h3 class="news__title">Новость 2</h3>
+          <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam aliquam tempora nostrum voluptas ipsam veritatis error, architecto, cupiditate exercitationem, incidunt recusandae libero iusto. Placeat provident aliquam accusamus aliquid similique!</p>
+          <p class="news__date">16.09.2022</p>
+        </div>
+      </div>
+
+      <div class="news">
+        <div class="news__img-box">
+          <img class="news__img" src="./images/news/korzina-kmu.jpg" alt="новость 1">
+        </div>
+        <div class="news__text-box">
+          <h3 class="news__title">Новость 3</h3>
+          <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam aliquam tempora nostrum voluptas ipsam veritatis error, architecto, cupiditate exercitationem, incidunt recusandae libero iusto. Placeat provident aliquam accusamus aliquid similique!</p>
+          <p class="news__date">16.09.2022</p>
+        </div>
+      </div>
+
+      <div class="news">
+        <div class="news__img-box">
+          <img class="news__img" src="./images/news/korzina-kmu.jpg" alt="новость 1">
+        </div>
+        <div class="news__text-box">
+          <h3 class="news__title">Новость 4</h3>
+          <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quam aliquam tempora nostrum voluptas ipsam veritatis error, architecto, cupiditate exercitationem, incidunt recusandae libero iusto. Placeat provident aliquam accusamus aliquid similique!</p>
+          <p class="news__date">16.09.2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__contacts">
+        <img class="footer__logo" src="./images/dintek-logo-white-250.png" alt="логотип">
+        <a class="footer__tel" href="tel:89999999999">+7(999)999-99-99</a>
+        <a class="footer__email" href="mailto:email@email.ru">email@email.ru</a>
+        <div class="footer__address-box">
+          <p class="footer__address">426016, Удмуртская Республика, гор. Ижевск, <br> Сарапульский тракт 14</p>
+          <p class="footer__work">График работы: пн-пт 9:00-18:00</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
