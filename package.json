@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gulp build && gh-pages -d dist"
   },
   "author": "timi-boy",
   "license": "ISC",
+  "homepage": "https://timur-webdev.github.io/dintek-service/",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
@@ -21,16 +22,17 @@
     "sass": "^1.54.5"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "normalize.css": "^8.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timi-boy/dintek-service.git"
+    "url": "git+https://github.com/timur-webdev/dintek-service.git"
   },
   "bugs": {
-    "url": "https://github.com/timi-boy/dintek-service/issues"
+    "url": "https://github.com/timur-webdev/dintek-service/issues"
   },
-  "homepage": "https://github.com/timi-boy/dintek-service#readme",
+  
   "description": ""
 }
